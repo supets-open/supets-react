@@ -1,2 +1,8 @@
-# supets-react
-ReactNative开发库
+# ReactNative开发库
+----------------------
+
+# 特性
+
+* 热更新实现
+* 预加载
+* 代码设置代理
