@@ -1772,9 +1772,11 @@ containing a value of this type.
         public static final int highlight_alpha_material_dark=0x7f080043;
         public static final int highlight_alpha_material_light=0x7f080044;
         public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f080045;
-        public static final int notification_large_icon_height=0x7f080046;
-        public static final int notification_large_icon_width=0x7f080047;
-        public static final int notification_subtext_size=0x7f080048;
+        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f080046;
+        public static final int item_touch_helper_swipe_escape_velocity=0x7f080047;
+        public static final int notification_large_icon_height=0x7f080048;
+        public static final int notification_large_icon_width=0x7f080049;
+        public static final int notification_subtext_size=0x7f08004a;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -2202,8 +2204,10 @@ containing a value of this type.
         public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f09006f;
         public static final int Base_Widget_AppCompat_Toolbar=0x7f0900ab;
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f090070;
-        public static final int DialogAnimationFade=0x7f0900ac;
-        public static final int DialogAnimationSlide=0x7f0900ad;
+        public static final int CalendarDatePickerDialog=0x7f0900ac;
+        public static final int CalendarDatePickerStyle=0x7f0900ad;
+        public static final int DialogAnimationFade=0x7f0900ae;
+        public static final int DialogAnimationSlide=0x7f0900af;
         public static final int Platform_AppCompat=0x7f09000f;
         public static final int Platform_AppCompat_Light=0x7f090010;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f090071;
@@ -2227,151 +2231,153 @@ containing a value of this type.
         public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f09002a;
         public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f09002b;
         public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f09002c;
-        public static final int TextAppearance_AppCompat=0x7f0900ae;
-        public static final int TextAppearance_AppCompat_Body1=0x7f0900af;
-        public static final int TextAppearance_AppCompat_Body2=0x7f0900b0;
-        public static final int TextAppearance_AppCompat_Button=0x7f0900b1;
-        public static final int TextAppearance_AppCompat_Caption=0x7f0900b2;
-        public static final int TextAppearance_AppCompat_Display1=0x7f0900b3;
-        public static final int TextAppearance_AppCompat_Display2=0x7f0900b4;
-        public static final int TextAppearance_AppCompat_Display3=0x7f0900b5;
-        public static final int TextAppearance_AppCompat_Display4=0x7f0900b6;
-        public static final int TextAppearance_AppCompat_Headline=0x7f0900b7;
-        public static final int TextAppearance_AppCompat_Inverse=0x7f0900b8;
-        public static final int TextAppearance_AppCompat_Large=0x7f0900b9;
-        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0900ba;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0900bb;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0900bc;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0900bd;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0900be;
-        public static final int TextAppearance_AppCompat_Medium=0x7f0900bf;
-        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0900c0;
-        public static final int TextAppearance_AppCompat_Menu=0x7f0900c1;
-        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0900c2;
-        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0900c3;
-        public static final int TextAppearance_AppCompat_Small=0x7f0900c4;
-        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0900c5;
-        public static final int TextAppearance_AppCompat_Subhead=0x7f0900c6;
-        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0900c7;
-        public static final int TextAppearance_AppCompat_Title=0x7f0900c8;
-        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0900c9;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0900ca;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0900cb;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0900cc;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0900cd;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0900ce;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0900cf;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0900d0;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0900d1;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0900d2;
-        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0900d3;
-        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0900d4;
-        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0900d5;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0900d6;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0900d7;
-        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0900d8;
-        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0900d9;
+        public static final int SpinnerDatePickerDialog=0x7f0900b0;
+        public static final int SpinnerDatePickerStyle=0x7f0900b1;
+        public static final int TextAppearance_AppCompat=0x7f0900b2;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0900b3;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0900b4;
+        public static final int TextAppearance_AppCompat_Button=0x7f0900b5;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0900b6;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0900b7;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0900b8;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0900b9;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0900ba;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0900bb;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0900bc;
+        public static final int TextAppearance_AppCompat_Large=0x7f0900bd;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0900be;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0900bf;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0900c0;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0900c1;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0900c2;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0900c3;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0900c4;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0900c5;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0900c6;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0900c7;
+        public static final int TextAppearance_AppCompat_Small=0x7f0900c8;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0900c9;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0900ca;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0900cb;
+        public static final int TextAppearance_AppCompat_Title=0x7f0900cc;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0900cd;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0900ce;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0900cf;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0900d0;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0900d1;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0900d2;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0900d3;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0900d4;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0900d5;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0900d6;
+        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0900d7;
+        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0900d8;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0900d9;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0900da;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0900db;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0900dc;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0900dd;
         public static final int TextAppearance_StatusBar_EventContent=0x7f09001b;
         public static final int TextAppearance_StatusBar_EventContent_Info=0x7f09001c;
         public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f09001d;
         public static final int TextAppearance_StatusBar_EventContent_Time=0x7f09001e;
         public static final int TextAppearance_StatusBar_EventContent_Title=0x7f09001f;
-        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0900da;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0900db;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0900dc;
-        public static final int Theme=0x7f0900dd;
-        public static final int Theme_AppCompat=0x7f0900de;
-        public static final int Theme_AppCompat_CompactMenu=0x7f0900df;
-        public static final int Theme_AppCompat_Dialog=0x7f0900e0;
-        public static final int Theme_AppCompat_Dialog_Alert=0x7f0900e1;
-        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0900e2;
-        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0900e3;
-        public static final int Theme_AppCompat_Light=0x7f0900e4;
-        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0900e5;
-        public static final int Theme_AppCompat_Light_Dialog=0x7f0900e6;
-        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0900e7;
-        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0900e8;
-        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0900e9;
-        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0900ea;
-        public static final int Theme_AppCompat_NoActionBar=0x7f0900eb;
-        public static final int Theme_Catalyst=0x7f0900ec;
-        public static final int Theme_Catalyst_RedBox=0x7f0900ed;
-        public static final int Theme_FullScreenDialog=0x7f0900ee;
-        public static final int Theme_FullScreenDialogAnimatedFade=0x7f0900ef;
-        public static final int Theme_FullScreenDialogAnimatedSlide=0x7f0900f0;
-        public static final int Theme_ReactNative_AppCompat_Light=0x7f0900f1;
-        public static final int Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen=0x7f0900f2;
-        public static final int ThemeOverlay_AppCompat=0x7f0900f3;
-        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0900f4;
-        public static final int ThemeOverlay_AppCompat_Dark=0x7f0900f5;
-        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0900f6;
-        public static final int ThemeOverlay_AppCompat_Light=0x7f0900f7;
-        public static final int Widget_AppCompat_ActionBar=0x7f0900f8;
-        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0900f9;
-        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0900fa;
-        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0900fb;
-        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0900fc;
-        public static final int Widget_AppCompat_ActionButton=0x7f0900fd;
-        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0900fe;
-        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0900ff;
-        public static final int Widget_AppCompat_ActionMode=0x7f090100;
-        public static final int Widget_AppCompat_ActivityChooserView=0x7f090101;
-        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f090102;
-        public static final int Widget_AppCompat_Button=0x7f090103;
-        public static final int Widget_AppCompat_Button_Borderless=0x7f090104;
-        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f090105;
-        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f090106;
-        public static final int Widget_AppCompat_Button_Colored=0x7f090107;
-        public static final int Widget_AppCompat_Button_Small=0x7f090108;
-        public static final int Widget_AppCompat_ButtonBar=0x7f090109;
-        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f09010a;
-        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f09010b;
-        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f09010c;
-        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f09010d;
-        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f09010e;
-        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f09010f;
-        public static final int Widget_AppCompat_EditText=0x7f090110;
-        public static final int Widget_AppCompat_Light_ActionBar=0x7f090111;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f090112;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f090113;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f090114;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f090115;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f090116;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f090117;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f090118;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f090119;
-        public static final int Widget_AppCompat_Light_ActionButton=0x7f09011a;
-        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f09011b;
-        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f09011c;
-        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f09011d;
-        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f09011e;
-        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f09011f;
-        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f090120;
-        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f090121;
-        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f090122;
-        public static final int Widget_AppCompat_Light_PopupMenu=0x7f090123;
-        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f090124;
-        public static final int Widget_AppCompat_Light_SearchView=0x7f090125;
-        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f090126;
-        public static final int Widget_AppCompat_ListPopupWindow=0x7f090127;
-        public static final int Widget_AppCompat_ListView=0x7f090128;
-        public static final int Widget_AppCompat_ListView_DropDown=0x7f090129;
-        public static final int Widget_AppCompat_ListView_Menu=0x7f09012a;
-        public static final int Widget_AppCompat_PopupMenu=0x7f09012b;
-        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f09012c;
-        public static final int Widget_AppCompat_PopupWindow=0x7f09012d;
-        public static final int Widget_AppCompat_ProgressBar=0x7f09012e;
-        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f09012f;
-        public static final int Widget_AppCompat_RatingBar=0x7f090130;
-        public static final int Widget_AppCompat_SearchView=0x7f090131;
-        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f090132;
-        public static final int Widget_AppCompat_Spinner=0x7f090133;
-        public static final int Widget_AppCompat_Spinner_DropDown=0x7f090134;
-        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f090135;
-        public static final int Widget_AppCompat_Spinner_Underlined=0x7f090136;
-        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f090137;
-        public static final int Widget_AppCompat_Toolbar=0x7f090138;
-        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f090139;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0900de;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0900df;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0900e0;
+        public static final int Theme=0x7f0900e1;
+        public static final int Theme_AppCompat=0x7f0900e2;
+        public static final int Theme_AppCompat_CompactMenu=0x7f0900e3;
+        public static final int Theme_AppCompat_Dialog=0x7f0900e4;
+        public static final int Theme_AppCompat_Dialog_Alert=0x7f0900e5;
+        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0900e6;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0900e7;
+        public static final int Theme_AppCompat_Light=0x7f0900e8;
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0900e9;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0900ea;
+        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0900eb;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0900ec;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0900ed;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0900ee;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0900ef;
+        public static final int Theme_Catalyst=0x7f0900f0;
+        public static final int Theme_Catalyst_RedBox=0x7f0900f1;
+        public static final int Theme_FullScreenDialog=0x7f0900f2;
+        public static final int Theme_FullScreenDialogAnimatedFade=0x7f0900f3;
+        public static final int Theme_FullScreenDialogAnimatedSlide=0x7f0900f4;
+        public static final int Theme_ReactNative_AppCompat_Light=0x7f0900f5;
+        public static final int Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen=0x7f0900f6;
+        public static final int ThemeOverlay_AppCompat=0x7f0900f7;
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0900f8;
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0900f9;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0900fa;
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0900fb;
+        public static final int Widget_AppCompat_ActionBar=0x7f0900fc;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0900fd;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0900fe;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0900ff;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f090100;
+        public static final int Widget_AppCompat_ActionButton=0x7f090101;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f090102;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f090103;
+        public static final int Widget_AppCompat_ActionMode=0x7f090104;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f090105;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f090106;
+        public static final int Widget_AppCompat_Button=0x7f090107;
+        public static final int Widget_AppCompat_Button_Borderless=0x7f090108;
+        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f090109;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f09010a;
+        public static final int Widget_AppCompat_Button_Colored=0x7f09010b;
+        public static final int Widget_AppCompat_Button_Small=0x7f09010c;
+        public static final int Widget_AppCompat_ButtonBar=0x7f09010d;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f09010e;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f09010f;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f090110;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f090111;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f090112;
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f090113;
+        public static final int Widget_AppCompat_EditText=0x7f090114;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f090115;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f090116;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f090117;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f090118;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f090119;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f09011a;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f09011b;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f09011c;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f09011d;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f09011e;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f09011f;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f090120;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f090121;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f090122;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f090123;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f090124;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f090125;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f090126;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f090127;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f090128;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f090129;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f09012a;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f09012b;
+        public static final int Widget_AppCompat_ListView=0x7f09012c;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f09012d;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f09012e;
+        public static final int Widget_AppCompat_PopupMenu=0x7f09012f;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f090130;
+        public static final int Widget_AppCompat_PopupWindow=0x7f090131;
+        public static final int Widget_AppCompat_ProgressBar=0x7f090132;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f090133;
+        public static final int Widget_AppCompat_RatingBar=0x7f090134;
+        public static final int Widget_AppCompat_SearchView=0x7f090135;
+        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f090136;
+        public static final int Widget_AppCompat_Spinner=0x7f090137;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f090138;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f090139;
+        public static final int Widget_AppCompat_Spinner_Underlined=0x7f09013a;
+        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f09013b;
+        public static final int Widget_AppCompat_Toolbar=0x7f09013c;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f09013d;
     }
     public static final class xml {
         public static final int preferences=0x7f060000;
@@ -4853,12 +4859,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextAppearance_android_shadowColor android:shadowColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_shadowDx android:shadowDx}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textColor android:textColor}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_textAllCaps com.awesomeproject:textAllCaps}</code></td><td></td></tr>
            </table>
+           @see #TextAppearance_android_shadowColor
+           @see #TextAppearance_android_shadowDx
+           @see #TextAppearance_android_shadowDy
+           @see #TextAppearance_android_shadowRadius
            @see #TextAppearance_android_textColor
            @see #TextAppearance_android_textSize
            @see #TextAppearance_android_textStyle
@@ -4867,8 +4881,33 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int[] TextAppearance = {
             0x01010095, 0x01010096, 0x01010097, 0x01010098,
+            0x01010161, 0x01010162, 0x01010163, 0x01010164,
             0x7f010024
         };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowColor}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:shadowColor
+        */
+        public static final int TextAppearance_android_shadowColor = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowDx}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:shadowDx
+        */
+        public static final int TextAppearance_android_shadowDx = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowDy}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:shadowDy
+        */
+        public static final int TextAppearance_android_shadowDy = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowRadius}
+          attribute's value can be found in the {@link #TextAppearance} array.
+          @attr name android:shadowRadius
+        */
+        public static final int TextAppearance_android_shadowRadius = 7;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textColor}
           attribute's value can be found in the {@link #TextAppearance} array.
@@ -4903,7 +4942,108 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.awesomeproject:textAllCaps
         */
-        public static final int TextAppearance_textAllCaps = 4;
+        public static final int TextAppearance_textAllCaps = 8;
+        /** Attributes that can be used with a TextStyle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextStyle_android_ellipsize android:ellipsize}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_maxLines android:maxLines}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_shadowColor android:shadowColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_shadowDx android:shadowDx}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_shadowDy android:shadowDy}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_singleLine android:singleLine}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_textAppearance android:textAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_textColor android:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_textSize android:textSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextStyle_android_textStyle android:textStyle}</code></td><td></td></tr>
+           </table>
+           @see #TextStyle_android_ellipsize
+           @see #TextStyle_android_maxLines
+           @see #TextStyle_android_shadowColor
+           @see #TextStyle_android_shadowDx
+           @see #TextStyle_android_shadowDy
+           @see #TextStyle_android_shadowRadius
+           @see #TextStyle_android_singleLine
+           @see #TextStyle_android_textAppearance
+           @see #TextStyle_android_textColor
+           @see #TextStyle_android_textSize
+           @see #TextStyle_android_textStyle
+         */
+        public static final int[] TextStyle = {
+            0x01010034, 0x01010095, 0x01010097, 0x01010098,
+            0x010100ab, 0x01010153, 0x0101015d, 0x01010161,
+            0x01010162, 0x01010163, 0x01010164
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#ellipsize}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:ellipsize
+        */
+        public static final int TextStyle_android_ellipsize = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#maxLines}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:maxLines
+        */
+        public static final int TextStyle_android_maxLines = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowColor}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:shadowColor
+        */
+        public static final int TextStyle_android_shadowColor = 7;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowDx}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:shadowDx
+        */
+        public static final int TextStyle_android_shadowDx = 8;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowDy}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:shadowDy
+        */
+        public static final int TextStyle_android_shadowDy = 9;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#shadowRadius}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:shadowRadius
+        */
+        public static final int TextStyle_android_shadowRadius = 10;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#singleLine}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:singleLine
+        */
+        public static final int TextStyle_android_singleLine = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:textAppearance
+        */
+        public static final int TextStyle_android_textAppearance = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textColor}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:textColor
+        */
+        public static final int TextStyle_android_textColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textSize}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:textSize
+        */
+        public static final int TextStyle_android_textSize = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textStyle}
+          attribute's value can be found in the {@link #TextStyle} array.
+          @attr name android:textStyle
+        */
+        public static final int TextStyle_android_textStyle = 2;
         /** Attributes that can be used with a Theme.
            <p>Includes the following attributes:</p>
            <table>

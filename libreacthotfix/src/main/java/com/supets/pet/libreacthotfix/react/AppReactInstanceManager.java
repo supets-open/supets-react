@@ -20,7 +20,7 @@ public class AppReactInstanceManager extends ReactNativeHost {
     }
 
     @Override
-    protected boolean getUseDeveloperSupport() {
+    public boolean getUseDeveloperSupport() {
         return false;
     }
 
