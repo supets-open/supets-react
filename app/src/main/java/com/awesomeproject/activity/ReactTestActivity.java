@@ -1,30 +1,29 @@
 package com.awesomeproject.activity;
 
-import android.os.Bundle;
+import android.util.Log;
 
-import com.supets.pet.libreacthotfix.preloader.CustomReactActivity;
-import com.supets.pet.libreacthotfix.preloader.ReactInfo;
-import com.supets.pet.libreacthotfix.react.Config;
+import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
+import com.supets.pet.libreacthotfix.preloader.SupetReactFragmentActivity;
 
-import javax.annotation.Nullable;
+public class ReactTestActivity extends SupetReactFragmentActivity {
 
-public class ReactTestActivity extends CustomReactActivity {
 
-    public static final ReactInfo reactInfo = new ReactInfo(Config.MODULE_NAME, null);
+    public void lazy() {
+        long start = System.currentTimeMillis();
+        ReactPreLoader.init(this, getMainComponentName(), getIntent().getExtras());
+        Log.v("lazy-start", System.currentTimeMillis() - start + "");
+    }
 
     @Override
     protected String getMainComponentName() {
-        return reactInfo.getMainComponentName();
+        return getIntent().getStringExtra("moduleName");
     }
 
-    @Override
-    public ReactInfo getReactInfo() {
-        return reactInfo;
-    }
 
-    @Nullable
     @Override
-    protected Bundle getLaunchOptions() {
-        return getIntent().getExtras();
+    protected void onDestroy() {
+        ReactPreLoader.onDestroy(getMainComponentName());
+        ReactPreLoader.clear();
+        super.onDestroy();
     }
 }

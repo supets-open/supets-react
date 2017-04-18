@@ -2,6 +2,7 @@ package com.supets.pet.libreacthotfix.react;
 
 
 import android.app.Application;
+import android.content.Context;
 
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -21,7 +22,7 @@ public class AppReactInstanceManager extends ReactNativeHost {
 
     @Override
     public boolean getUseDeveloperSupport() {
-        return false;
+        return true;
     }
 
     @Override
@@ -46,6 +47,24 @@ public class AppReactInstanceManager extends ReactNativeHost {
                 .setBundleAssetName(Config.MIA_BUNDLE_NAME)
                 .setAssetDir(getApplication().getFilesDir())
                 .getJSBundleFile();
+    }
+
+
+    private static AppReactInstanceManager mReactNativeHost;
+
+    public static AppReactInstanceManager getInstance(Application  context) {
+        if (mReactNativeHost == null) {
+            synchronized (AppReactInstanceManager.class) {
+                if (mReactNativeHost == null) {
+                    mReactNativeHost = new AppReactInstanceManager(context);
+                }
+            }
+        }
+        return mReactNativeHost;
+    }
+
+    public static void reset() {
+        mReactNativeHost=null;
     }
 
 }

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 
 import com.awesomeproject.R;
@@ -13,6 +14,8 @@ import com.supets.pet.libreacthotfix.api.UpDateBundleApi;
 import com.supets.pet.libreacthotfix.bean.AppVersion;
 import com.supets.pet.libreacthotfix.bean.ReactUpdateRequest;
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
+
+import java.util.Random;
 
 public class MainActivity extends Activity  implements JsBundleCallback {
 
@@ -26,11 +29,12 @@ public class MainActivity extends Activity  implements JsBundleCallback {
             @Override
             public void onClick(View v) {
 
-                ReactPreLoader.init(MainActivity.this, ReactTestActivity.reactInfo);
+
+//                ReactPreLoader.init(MainActivity.this,"familyAddress");
 
                 Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("moduleName", "团购");
+                bundle.putString("moduleName", "familyAddress");
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
@@ -38,9 +42,11 @@ public class MainActivity extends Activity  implements JsBundleCallback {
         findViewById(R.id.startWeb2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("moduleName", "蜜芽圈");
+                bundle.putString("moduleName", "mainpage");
+                bundle.putString("moduleName2", System.currentTimeMillis()+"");
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
