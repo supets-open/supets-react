@@ -1,6 +1,7 @@
 package com.supets.pet.libreacthotfix.utils;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
@@ -15,18 +16,8 @@ import android.preference.PreferenceManager;
 
 public class ReactContextUtils {
 
-    public static Application mApplication;
-
-    public static void setApplication(Application application) {
-        mApplication = application;
-    }
-
-    public static Application getApplication() {
-        return mApplication;
-    }
-
-    public static void setDebugHost(String host, String port) {
-        SharedPreferences mPreferneces = PreferenceManager.getDefaultSharedPreferences(mApplication);
+    public static void setDebugHost(Context context,String host, String port) {
+        SharedPreferences mPreferneces = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = mPreferneces.edit();
         editor.putString("debug_http_host", host.concat(":").concat(port));
         editor.apply();

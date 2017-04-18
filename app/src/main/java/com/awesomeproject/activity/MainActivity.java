@@ -23,14 +23,12 @@ public class MainActivity extends Activity  implements JsBundleCallback {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.react_test_main);
+        ReactPreLoader.init(this, "mainpage", null);
 
 
         findViewById(R.id.startWeb).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-//                ReactPreLoader.init(MainActivity.this,"familyAddress");
 
                 Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
                 Bundle bundle = new Bundle();
@@ -42,7 +40,6 @@ public class MainActivity extends Activity  implements JsBundleCallback {
         findViewById(R.id.startWeb2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("moduleName", "mainpage");

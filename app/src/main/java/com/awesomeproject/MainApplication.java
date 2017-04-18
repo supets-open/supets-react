@@ -16,8 +16,7 @@ public class MainApplication extends Application implements ReactApplication {
         super.onCreate();
         ReactPreLoader.clear();
         SoLoader.init(this, /* native exopackage */ false);
-        ReactContextUtils.setApplication(this);
-       // ReactContextUtils.setDebugHost("10.12.32.47", "8081");
+        //ReactContextUtils.setDebugHost(this,"10.12.32.47", "8081");
     }
 
     @Override

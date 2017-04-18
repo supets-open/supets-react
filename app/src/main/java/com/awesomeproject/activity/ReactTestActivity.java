@@ -3,9 +3,9 @@ package com.awesomeproject.activity;
 import android.util.Log;
 
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
-import com.supets.pet.libreacthotfix.preloader.SupetReactFragmentActivity;
+import com.supets.pet.libreacthotfix.preloader.SupetReactActivity;
 
-public class ReactTestActivity extends SupetReactFragmentActivity {
+public class ReactTestActivity extends SupetReactActivity {
 
 
     public void lazy() {
@@ -23,7 +23,6 @@ public class ReactTestActivity extends SupetReactFragmentActivity {
     @Override
     protected void onDestroy() {
         ReactPreLoader.onDestroy(getMainComponentName());
-        ReactPreLoader.clear();
         super.onDestroy();
     }
 }
