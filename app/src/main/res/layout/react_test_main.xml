@@ -2,20 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-  >
-    <Button
-        android:id="@+id/startWeb"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="startWeb" />
-    <Button
-        android:id="@+id/startWeb2"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/reactnative_for_android" />
+
+    <ListView
+        android:layout_marginTop="2dp"
+        android:id="@+id/reactListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="startWeb2" />
-    <com.facebook.react.ReactRootView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/react_root_view"/>
+        android:layout_height="match_parent">
+    </ListView>
+
+
+
 </LinearLayout>

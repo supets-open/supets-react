@@ -7,7 +7,6 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
 import com.supets.pet.libreacthotfix.react.AppReactInstanceManager;
-import com.supets.pet.libreacthotfix.utils.ReactContextUtils;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -16,7 +15,7 @@ public class MainApplication extends Application implements ReactApplication {
         super.onCreate();
         ReactPreLoader.clear();
         SoLoader.init(this, /* native exopackage */ false);
-        //ReactContextUtils.setDebugHost(this,"10.12.32.47", "8081");
+//        ReactDevelopTools.setDebugHost(this,"10.12.32.47", "8081",true);
     }
 
     @Override

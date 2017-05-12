@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="contextlib-2.0.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libreacthotfix/build/intermediates/exploded-aar/com.supets.lib/contextlib/2.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/libreacthotfix/build/intermediates/exploded-aar/com.supets.lib/contextlib/2.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

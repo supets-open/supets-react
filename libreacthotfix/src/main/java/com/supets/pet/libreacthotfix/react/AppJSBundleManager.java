@@ -1,7 +1,7 @@
 package com.supets.pet.libreacthotfix.react;
 
-import android.support.annotation.NonNull;
-import com.supets.pet.libreacthotfix.utils.ReactContextUtils;
+import com.supets.lib.supetscontext.App;
+import com.supets.pet.libreacthotfix.utils.FileUtil;
 
 import java.io.File;
 
@@ -10,16 +10,8 @@ public class AppJSBundleManager {
     private String mBundleAssetName = Config.MIA_BUNDLE_NAME;
     private File mAssetDir;
 
-    public File getAssetDir() {
-        return mAssetDir;
-    }
-
-    public String getBundleAssetName() {
-        return mBundleAssetName;
-    }
-
     private AppJSBundleManager() {
-        mAssetDir = ReactContextUtils.getApplication().getFilesDir();
+        mAssetDir = FileUtil.getDiskFileDir(App.INSTANCE);
     }
 
     public String getJSBundleFile() {
@@ -30,18 +22,13 @@ public class AppJSBundleManager {
         return "assets://" + mBundleAssetName;
     }
 
+    public String getJSBundleFileDir() {
+        File assetFile = new File(mAssetDir, mBundleAssetName);
+        return assetFile.getAbsolutePath();
+    }
+
     public static AppJSBundleManager build() {
         return new AppJSBundleManager();
-    }
-
-    public AppJSBundleManager setBundleAssetName(@NonNull final String bundleAssetName) {
-        mBundleAssetName = bundleAssetName;
-        return this;
-    }
-
-    public AppJSBundleManager setAssetDir(@NonNull final File assetDir) {
-        mAssetDir = new File(assetDir, "assets");
-        return this;
     }
 
 }

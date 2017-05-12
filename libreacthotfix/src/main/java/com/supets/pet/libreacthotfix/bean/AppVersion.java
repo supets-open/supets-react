@@ -1,6 +1,5 @@
 package com.supets.pet.libreacthotfix.bean;
 
-import com.supets.pet.libreacthotfix.react.Config;
 import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
 
 public class AppVersion {
@@ -16,7 +15,7 @@ public class AppVersion {
         this.downloadUrl = downloadUrl;
     }
 
-    public  String getLatestVersion() {
+    public String getLatestVersion() {
         return lastBundleVersion;
     }
 
@@ -25,8 +24,7 @@ public class AppVersion {
     }
 
     public boolean isUpdate() {
-        return !VersionSharePreferceUtils.getString(Config.BUNDLE_VERSION, Config.DEFAULT_BUNDLE_VERSION)
-                .equals(lastBundleVersion);
+        return !VersionSharePreferceUtils.getBundleVersion().equals(lastBundleVersion);
     }
 
 }

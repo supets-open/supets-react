@@ -10,16 +10,10 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        ndk {
-            abiFilters "armeabi-v7a", "x86"
-        }
     }
 
     sourceSets {
-        main {
-            assets.srcDirs = ['assets']
-            jniLibs.srcDirs = ['jniLibs']
-        }
+
         instrumentTest.setRoot('tests')
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')

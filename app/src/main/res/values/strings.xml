@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AwesomeProject</string>
+    <string name="app_name">RN学习宝典</string>
+    <string name="reactnative_for_android">ReactNative for Android 学习宝典</string>
 </resources>

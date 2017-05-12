@@ -1,7 +1,14 @@
 package com.supets.pet.libreacthotfix.utils;
 
+import android.content.Context;
+import android.os.Environment;
+
 import java.io.File;
 import java.io.FileOutputStream;
+
+/**
+ * 参考  http://blog.csdn.net/guolin_blog/article/details/28863651#
+ */
 
 public class FileUtil {
 
@@ -54,5 +61,28 @@ public class FileUtil {
         fosfrom.close();
         fosto.close();
     }
+
+    public static File getDiskCacheDir(Context context) {
+        String cachePath;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
+                || !Environment.isExternalStorageRemovable()) {
+            cachePath = context.getExternalCacheDir().getPath();
+        } else {
+            cachePath = context.getCacheDir().getPath();
+        }
+        return new File(cachePath);
+    }
+
+    public static File getDiskFileDir(Context context) {
+        String cachePath;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
+                || !Environment.isExternalStorageRemovable()) {
+            cachePath = context.getExternalFilesDir(null).getPath();
+        } else {
+            cachePath = context.getFilesDir().getPath();
+        }
+        return new File(cachePath);
+    }
+
 
 }
