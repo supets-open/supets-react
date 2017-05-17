@@ -2,6 +2,7 @@ package com.supets.pet.libreacthotfix.react;
 
 import com.supets.lib.supetscontext.App;
 import com.supets.pet.libreacthotfix.utils.FileUtil;
+import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
 
 import java.io.File;
 
@@ -19,6 +20,7 @@ public class AppJSBundleManager {
         if (assetFile.exists()) {
             return assetFile.getAbsolutePath();
         }
+        VersionSharePreferceUtils.setBundleVersion(VersionSharePreferceUtils.DEFAULT_BUNDLE_VERSION);
         return "assets://" + mBundleAssetName;
     }
 

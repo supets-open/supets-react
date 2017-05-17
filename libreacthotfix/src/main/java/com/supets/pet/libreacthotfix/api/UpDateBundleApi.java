@@ -33,7 +33,7 @@ public class UpDateBundleApi {
                     mDownloadFile.delete();
                 }
 
-                Log.v("jsfile====",mDownloadFile.getAbsolutePath());
+                Log.v("jsfile====", mDownloadFile.getAbsolutePath());
 
                 try {
                     HttpURLConnection conn = (HttpURLConnection) new URL(params[0]).openConnection();
@@ -42,8 +42,8 @@ public class UpDateBundleApi {
 
                     long fileLength = conn.getContentLength();
                     publishProgress(0);
-                    Log.v("======","0");
-                    Log.v("======","fileLength"+fileLength);
+                    Log.v("======", "0");
+                    Log.v("======", "fileLength" + fileLength);
 
                     BufferedInputStream inputStream = new BufferedInputStream(conn.getInputStream());
                     BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(mDownloadFile));
@@ -53,16 +53,16 @@ public class UpDateBundleApi {
                     while ((length = inputStream.read(buffer)) > 0) {
                         outputStream.write(buffer, 0, length);
                         DownedFileLength += length;
-                        int mDownedProgress = (int) (DownedFileLength*1.0 * 100 / fileLength);
+                        int mDownedProgress = (int) (DownedFileLength * 1.0 * 100 / fileLength);
                         publishProgress(mDownedProgress);
-                        Log.v("======","mDownedProgress"+mDownedProgress);
+                        Log.v("======", "mDownedProgress" + mDownedProgress);
                     }
                     inputStream.close();
                     outputStream.close();
                     conn.disconnect();
                 } catch (Exception e) {
                     e.printStackTrace();
-                    Log.v("======","excep");
+                    Log.v("======", "excep");
                     return null;
                 }
 
@@ -109,7 +109,7 @@ public class UpDateBundleApi {
                     if (bundle.exists()) {
                         bundle.delete();
                     }
-                    FileUtil.copyFile(file.getFile(),bundle, true);
+                    FileUtil.copyFile(file.getFile(), bundle, true);
                     VersionSharePreferceUtils.setBundleVersion(version.getLatestVersion());
                 } catch (Exception e) {
                     if (mCallback != null) {
@@ -131,6 +131,53 @@ public class UpDateBundleApi {
                 }
             }
         });
+    }
+
+    public static void downloadAsync(final AppVersion version, final JsBundleCallback mCallback) {
+        upgrade(version.getDownloadUrl(), new DownloadProgressListener() {
+            @Override
+            public void onProgressChanged(int progress) {
+                if (mCallback != null) {
+                    mCallback.onDownloading(progress);
+                }
+            }
+        }, new DownloadResultListener() {
+            @Override
+            public void downloadSuccess(DownloadFile file) {
+                if (mCallback != null) {
+                    mCallback.onUpdateSuccess();
+                }
+            }
+
+            @Override
+            public void onError(Exception e) {
+                if (mCallback != null) {
+                    mCallback.onError(e);
+                }
+            }
+        });
+    }
+
+
+    public static void patch() {
+        try {
+
+            File mDownloadFile = new File(Environment.getExternalStorageDirectory(), Config.MIA_BUNDLE_NAME);
+
+            if (mDownloadFile.exists()) {
+
+                File bundle = new File(AppJSBundleManager.build().getJSBundleFileDir());
+                if (bundle.exists()) {
+                    bundle.delete();
+                }
+
+                FileUtil.copyFile(mDownloadFile, bundle, true);
+
+                mDownloadFile.delete();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

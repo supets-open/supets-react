@@ -14,6 +14,7 @@ import com.supets.pet.libreacthotfix.api.JsBundleCallback;
 import com.supets.pet.libreacthotfix.api.UpDateBundleApi;
 import com.supets.pet.libreacthotfix.bean.AppVersion;
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
+import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
 
 public class MainActivity extends Activity implements JsBundleCallback {
 
@@ -25,7 +26,12 @@ public class MainActivity extends Activity implements JsBundleCallback {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.react_test_main);
-        ReactPreLoader.init(this, "pageCache", null);
+
+        //热修复
+        UpDateBundleApi.patch();
+        ReactPreLoader.clear();
+
+        //预加载
 
         reactListView = (ListView) findViewById(R.id.reactListView);
         adapter = new ReactAdapter();
@@ -49,7 +55,7 @@ public class MainActivity extends Activity implements JsBundleCallback {
         appVersion.setLastBundleVersion("1.1.0");
 
         if (appVersion.isUpdate()) {
-            UpDateBundleApi.download(appVersion, this);
+            UpDateBundleApi.downloadAsync(appVersion, this);
         }else{
             onNoUpdate();
         }
@@ -57,11 +63,14 @@ public class MainActivity extends Activity implements JsBundleCallback {
     }
 
     private void startUi(ReactData data) {
-        ReactPreLoader.init(this, data.moduleName, null);
+
         Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString("moduleName", data.moduleName);
         intent.putExtras(bundle);
+
+        ReactPreLoader.init(this,  data.moduleName, bundle);
+
         startActivity(intent);
     }
 
@@ -82,7 +91,10 @@ public class MainActivity extends Activity implements JsBundleCallback {
     @Override
     public void onUpdateSuccess() {
         Toast.makeText(App.INSTANCE,"success",Toast.LENGTH_SHORT).show();
-        ReactPreLoader.clear();
-        ReactPreLoader.init(this, "pageCache", null);
+
+        VersionSharePreferceUtils.setBundleVersion("1.1.0");
+
+//        ReactPreLoader.clear();
+//        ReactPreLoader.init(this, "pageCache", null);
     }
 }
