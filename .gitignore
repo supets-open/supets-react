@@ -1,1 +1,5 @@
 /build
+.idea
+.gradle
+supets-react.iml
+local.properties
