@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AwesomeProject.iml" filepath="$PROJECT_DIR$/AwesomeProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" filepath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supets-react.iml" filepath="$PROJECT_DIR$/supets-react.iml" />
     </modules>
   </component>
 </project>
