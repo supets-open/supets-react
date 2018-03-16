@@ -10,15 +10,6 @@ import com.awesomeproject.R;
 
 import java.util.ArrayList;
 
-/**
- * AwesomeProject
- *
- * @user lihongjiang
- * @description
- * @date 2017/4/19
- * @updatetime 2017/4/19
- */
-
 public class ReactAdapter extends BaseAdapter {
 
 
