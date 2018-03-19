@@ -28,8 +28,8 @@ public class MainActivity extends Activity implements JsBundleCallback {
         setContentView(R.layout.react_test_main);
 
         //热修复
-        UpDateBundleApi.patch();
-        ReactPreLoader.clear();
+        //UpDateBundleApi.patch();
+        //ReactPreLoader.clear();
 
         //预加载
 
@@ -50,15 +50,15 @@ public class MainActivity extends Activity implements JsBundleCallback {
             }
         });
 
-        AppVersion appVersion = new AppVersion();
-        appVersion.setDownloadUrl("https://raw.githubusercontent.com/supets-open/supets-java/master/patch110");
-        appVersion.setLastBundleVersion("1.1.0");
-
-        if (appVersion.isUpdate()) {
-            UpDateBundleApi.downloadAsync(appVersion, this);
-        }else{
-            onNoUpdate();
-        }
+//        AppVersion appVersion = new AppVersion();
+//        appVersion.setDownloadUrl("https://raw.githubusercontent.com/supets-open/supets-java/master/patch110");
+//        appVersion.setLastBundleVersion("1.1.0");
+//
+//        if (appVersion.isUpdate()) {
+//            UpDateBundleApi.downloadAsync(appVersion, this);
+//        }else{
+//            onNoUpdate();
+//        }
 
     }
 

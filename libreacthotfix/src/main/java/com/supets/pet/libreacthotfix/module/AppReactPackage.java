@@ -14,6 +14,7 @@ public class AppReactPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext context) {
         List<NativeModule> modules = new ArrayList<>();
+        modules.add(new MyIntentModule(context));
         return modules;
     }
 

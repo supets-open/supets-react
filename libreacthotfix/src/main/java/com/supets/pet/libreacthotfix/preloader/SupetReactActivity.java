@@ -11,6 +11,7 @@ package com.supets.pet.libreacthotfix.preloader;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 
 import com.facebook.react.ReactInstanceManager;
@@ -18,6 +19,9 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.modules.core.PermissionAwareActivity;
 import com.facebook.react.modules.core.PermissionListener;
+import com.supets.pet.libreacthotfix.module.MyConstants;
+
+import java.util.concurrent.ArrayBlockingQueue;
 
 import javax.annotation.Nullable;
 
@@ -83,6 +87,22 @@ public abstract class SupetReactActivity extends Activity
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         mDelegate.onActivityResult(requestCode, resultCode, data);
+        onActivityResultex(requestCode, resultCode, data);
+    }
+
+    public void onActivityResultex(int requestCode, int resultCode, Intent data) {
+
+        if (resultCode == RESULT_OK && requestCode == 100) {
+            String result = data.getStringExtra("result");
+            if (!TextUtils.isEmpty(result)) {
+                MyConstants.myBlockingQueue.add(result);
+            } else {
+                MyConstants.myBlockingQueue.add("无数据传回");
+            }
+
+        } else {
+            MyConstants.myBlockingQueue.add("没有");
+        }
     }
 
     @Override

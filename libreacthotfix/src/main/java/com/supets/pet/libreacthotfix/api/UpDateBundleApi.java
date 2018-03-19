@@ -1,5 +1,6 @@
 package com.supets.pet.libreacthotfix.api;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
@@ -20,6 +21,7 @@ import java.net.URL;
 
 public class UpDateBundleApi {
 
+    @SuppressLint("StaticFieldLeak")
     private static void upgrade(String url,
                                 final DownloadProgressListener process,
                                 final DownloadResultListener resultListener) {
