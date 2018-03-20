@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException;
@@ -53,30 +54,33 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void getDataFromIntent(Callback successBack, Callback erroBack) {
         try {
-
             Activity currentActivity = getCurrentActivity();
             Bundle result = currentActivity.getIntent().getExtras();//会有对应数据放入
-
-            WritableNativeMap bundle = new WritableNativeMap();
-
-            Set<String> iterable = result.keySet();
-            for (String key : iterable) {
-                if (result.get(key) instanceof Boolean) {
-                    bundle.putBoolean(key, (Boolean) result.get(key));
-                }
-
-                if (result.get(key) instanceof Number) {
-                    bundle.putDouble(key, (Double) result.get(key));
-                }
-
-                if (result.get(key) instanceof String) {
-                    bundle.putString(key, (String) result.get(key));
-                }
-            }
-            successBack.invoke(bundle);
+            successBack.invoke(IntentToBundle(result));
         } catch (Exception e) {
             erroBack.invoke(e.getMessage());
         }
+    }
+
+    @NonNull
+    private WritableNativeMap IntentToBundle(Bundle result) {
+        WritableNativeMap bundle = new WritableNativeMap();
+
+        Set<String> iterable = result.keySet();
+        for (String key : iterable) {
+            if (result.get(key) instanceof Boolean) {
+                bundle.putBoolean(key, (Boolean) result.get(key));
+            }
+
+            if (result.get(key) instanceof Number) {
+                bundle.putDouble(key, Double.parseDouble((String) result.get(key)));
+            }
+
+            if (result.get(key) instanceof String) {
+                bundle.putString(key, (String) result.get(key));
+            }
+        }
+        return bundle;
     }
 
     /**
@@ -121,7 +125,7 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
             if (null != currentActivity) {
                 Class aimActivity = Class.forName(activityName);
                 Intent intent = new Intent(currentActivity, aimActivity);
-                intent.putExtra("moduleName",moduleName);
+                intent.putExtra("moduleName", moduleName);
                 currentActivity.startActivity(intent);
             }
         } catch (Exception e) {
