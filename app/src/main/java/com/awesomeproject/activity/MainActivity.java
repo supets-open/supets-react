@@ -28,8 +28,8 @@ public class MainActivity extends Activity implements JsBundleCallback {
         setContentView(R.layout.react_test_main);
 
         //热修复
-        //UpDateBundleApi.patch();
-        //ReactPreLoader.clear();
+        UpDateBundleApi.patch();
+        ReactPreLoader.clear();
 
         //预加载
 
