@@ -14,7 +14,7 @@ import com.facebook.react.ReactRootView;
  */
 public class ReactPreLoader {
 
-    public static IPreLoader preLoader = new ReactPreLoaderSIngle();
+    public static IPreLoader preLoader = new ReactPreLoaderMulti();
 
     public static ReactRootView getRootView(String componentName) {
         return preLoader.getRootView(componentName);

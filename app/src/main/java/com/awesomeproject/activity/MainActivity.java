@@ -63,14 +63,11 @@ public class MainActivity extends Activity implements JsBundleCallback {
     }
 
     private void startUi(ReactData data) {
-
         Intent intent = new Intent(MainActivity.this, ReactTestActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString("moduleName", data.moduleName);
-        intent.putExtras(bundle);
-
-        ReactPreLoader.init(this,  data.moduleName, bundle);
-
+        intent.putExtra("moduleName", data.moduleName);
+        intent.putExtra("page", 2);
+        intent.putExtra("price", 2.3);
+        //ReactPreLoader.init(this,  data.moduleName, bundle);
         startActivity(intent);
     }
 
@@ -80,17 +77,17 @@ public class MainActivity extends Activity implements JsBundleCallback {
 
     @Override
     public void onError(Exception e) {
-        Toast.makeText(App.INSTANCE,"Exception",Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.INSTANCE, "Exception", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onNoUpdate() {
-        Toast.makeText(App.INSTANCE,"onNoUpdate",Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.INSTANCE, "onNoUpdate", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onUpdateSuccess() {
-        Toast.makeText(App.INSTANCE,"success",Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.INSTANCE, "success", Toast.LENGTH_SHORT).show();
 
         VersionSharePreferceUtils.setBundleVersion("1.1.0");
 

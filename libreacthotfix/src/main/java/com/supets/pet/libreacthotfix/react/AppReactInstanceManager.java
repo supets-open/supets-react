@@ -46,7 +46,7 @@ public class AppReactInstanceManager extends ReactNativeHost {
                 .getJSBundleFile();
     }
 
-    private static AppReactInstanceManager mReactNativeHost;
+    private static volatile  AppReactInstanceManager mReactNativeHost;
 
     public static AppReactInstanceManager getInstance(Application context) {
         if (mReactNativeHost == null) {

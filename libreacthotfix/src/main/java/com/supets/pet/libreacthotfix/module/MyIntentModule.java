@@ -3,14 +3,23 @@ package com.supets.pet.libreacthotfix.module;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.text.TextUtils;
+import android.os.Bundle;
 
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.ReadableMapKeySetIterator;
+import com.facebook.react.bridge.ReadableType;
+import com.facebook.react.bridge.WritableNativeMap;
 
+import java.util.Set;
+
+/**
+ * 数据类型使用 String boolean Number(Double)
+ */
 public class MyIntentModule extends ReactContextBaseJavaModule {
 
     public static final String REACTCLASSNAME = "MyIntentModule";
@@ -44,12 +53,27 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void getDataFromIntent(Callback successBack, Callback erroBack) {
         try {
+
             Activity currentActivity = getCurrentActivity();
-            String result = currentActivity.getIntent().getStringExtra("result");//会有对应数据放入
-            if (TextUtils.isEmpty(result)) {
-                result = "No Data";
+            Bundle result = currentActivity.getIntent().getExtras();//会有对应数据放入
+
+            WritableNativeMap bundle = new WritableNativeMap();
+
+            Set<String> iterable = result.keySet();
+            for (String key : iterable) {
+                if (result.get(key) instanceof Boolean) {
+                    bundle.putBoolean(key, (Boolean) result.get(key));
+                }
+
+                if (result.get(key) instanceof Number) {
+                    bundle.putDouble(key, (Double) result.get(key));
+                }
+
+                if (result.get(key) instanceof String) {
+                    bundle.putString(key, (String) result.get(key));
+                }
             }
-            successBack.invoke(result);
+            successBack.invoke(bundle);
         } catch (Exception e) {
             erroBack.invoke(e.getMessage());
         }
@@ -90,6 +114,61 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
         }
     }
 
+    @ReactMethod
+    public void startActivityByStringWithModule(String activityName, String moduleName) {
+        try {
+            Activity currentActivity = getCurrentActivity();
+            if (null != currentActivity) {
+                Class aimActivity = Class.forName(activityName);
+                Intent intent = new Intent(currentActivity, aimActivity);
+                intent.putExtra("moduleName",moduleName);
+                currentActivity.startActivity(intent);
+            }
+        } catch (Exception e) {
+            throw new JSApplicationIllegalArgumentException(
+                    "Could not open the activity : " + e.getMessage());
+        }
+    }
+
+    @ReactMethod
+    public void startActivityByStringWithBundle(String activityName, ReadableMap map) {
+        try {
+            Activity currentActivity = getCurrentActivity();
+
+            if (null != currentActivity) {
+                Class aimActivity = Class.forName(activityName);
+                Intent intent = new Intent(currentActivity, aimActivity);
+                BundleToIntent(map, intent);
+                currentActivity.startActivity(intent);
+            }
+        } catch (Exception e) {
+            throw new JSApplicationIllegalArgumentException(
+                    "Could not open the activity : " + e.getMessage());
+        }
+    }
+
+    private void BundleToIntent(ReadableMap map, Intent intent) {
+        if (map != null) {
+            ReadableMapKeySetIterator iterator = map.keySetIterator();
+            if (iterator != null) {
+                while (iterator.hasNextKey()) {
+                    String key = iterator.nextKey();
+                    ReadableType type = map.getType(key);
+                    if (type == ReadableType.Boolean) {
+                        intent.putExtra(key, map.getBoolean(key));
+                    }
+                    if (type == ReadableType.String) {
+                        intent.putExtra(key, map.getString(key));
+                    }
+
+                    if (type == ReadableType.Number) {
+                        intent.putExtra(key, map.getDouble(key));
+                    }
+                }
+            }
+        }
+    }
+
     /**
      * 在JS端调用
      * React.NativeModules.MyIntentModule.startActivityForResult(
@@ -113,6 +192,27 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
                 Class aimActivity = Class.forName(activityName);
                 Intent intent = new Intent(currentActivity, aimActivity);
                 currentActivity.startActivityForResult(intent, requestCode);
+                MyConstants.myBlockingQueue.clear();
+                String result = MyConstants.myBlockingQueue.take();
+                successCallback.invoke(result);
+            }
+        } catch (Exception e) {
+            erroCallback.invoke(e.getMessage());
+            throw new JSApplicationIllegalArgumentException(
+                    "Could not open the activity : " + e.getMessage());
+        }
+    }
+
+    @ReactMethod
+    public void startActivityForResultWithBundle(String activityName, int requestCode, Callback successCallback, Callback erroCallback, ReadableMap map) {
+        try {
+            Activity currentActivity = getCurrentActivity();
+            if (null != currentActivity) {
+                Class aimActivity = Class.forName(activityName);
+                Intent intent = new Intent(currentActivity, aimActivity);
+                BundleToIntent(map, intent);
+                currentActivity.startActivityForResult(intent, requestCode);
+                MyConstants.myBlockingQueue.clear();
                 String result = MyConstants.myBlockingQueue.take();
                 successCallback.invoke(result);
             }
