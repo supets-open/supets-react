@@ -73,7 +73,7 @@ public class MyIntentModule extends ReactContextBaseJavaModule {
             }
 
             if (result.get(key) instanceof Number) {
-                bundle.putDouble(key, Double.parseDouble((String) result.get(key)));
+                bundle.putDouble(key, ((Number) result.get(key)).doubleValue());
             }
 
             if (result.get(key) instanceof String) {
