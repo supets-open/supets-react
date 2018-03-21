@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_f20786d4fbfc5b03eceeb1b4dee5825c381086b6.jar" />
+        revision="25.0.3"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\okio-1.9.0_f3eb6effd4f8198ff24f3f868a0a6afda7dcbc02.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_e2b955cce16cc75f7ef94d24dc1aefbd2ac99c33.jar" />
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.0_7cd38231af1a9796c9afaaba3e06686c22fb409b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,30 +30,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_795709c6b3ad9538410d201bc0e4abf656d7fecd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\supets-react\libreacthotfix\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e3348681da4d2aeca10d4d8127eea124db976a6d">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\supets-react-libreacthotfix-unspecified_5f5143c6d9c1d0f65336e743d757d2a0d7fb8b24.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8efe81b197022b66b41715c5b46b721dd988ad8f.jar" />
+        revision="25.0.3"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.0_b35f73e1750d26c444f146e7ff08942a1d6ada17.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,6 +48,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_e122fa5885f3c54ced7c90f5402472709cc06b83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_2ea36876004d7bf5580e85de369f4263772cf0c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.0_d912c37632a21140b4ace20e54311f0239dc25f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.3\jars\libs\infer-annotations-1.5.jar"
         jumboMode="false"
         optimize="true"
@@ -75,12 +84,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\design\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.0_43ead42b4f848d0c04575a5d135cb2acf3d6f936.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
         <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_28220695cff43dad5b2c65f24d7e062e0d25ff1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_2b7bab16fae9e9b0fb2989c8b06fe1b8a8e7d3e7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,21 +129,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_5b4d9c2fe978cb6c57c04b2f68949471929934a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_408c15b258b89568cbbccabd36b36b4eb2b6e9bb.jar" />
+        revision="25.0.3"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.0_f19122c8ce79f713cc15806daba212d89418f560.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,6 +147,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.0_04ef9f768e5b3fffc4cdcc8af5c5546000cb6fe5.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -138,12 +165,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-ws\3.4.1\8ace66ef7002d98f633377c9e67daeeb196d8c3b\okhttp-ws-3.4.1.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_b3b48a31e316fa877b0ae7150b4cd51e85aa6c50.jar" />
+        revision="25.0.3"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\okhttp-ws-3.4.1_7c95becdffdca0069644dc281a6bb0ccee217cb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8efe81b197022b66b41715c5b46b721dd988ad8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.43.3_189cca6529e20cead9ca0080ddefda55650cf0d4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -156,15 +201,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_12aab91f27a528442ae9c7fea215961d569fc5d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -174,12 +210,255 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_84f4c248e2bc7944ef584827fe9a861aacc9cce1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.0_ed7bcd10af5a7be1cfb4674d0191d7c3da21ddef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.43.3\jars\libs\infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\infer-annotations-1.5_f3d6be53f0c6dfbee13ecb80cdb3ba84379373f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_12aab91f27a528442ae9c7fea215961d569fc5d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.0.1_59dcc0ab0f1c48088fa1222b7cacc84569ebafcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_f20786d4fbfc5b03eceeb1b4dee5825c381086b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.supets.lib\contextlib\2.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="75aea7f536666cf9f376b3293681c129596851d5">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.supets.lib-contextlib-2.0.0_d82e4f145022a48533ddf23533e3d5acd4214e6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\supets-react\libreacthotfix\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e3348681da4d2aeca10d4d8127eea124db976a6d">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\supets-react-libreacthotfix-unspecified_5f5143c6d9c1d0f65336e743d757d2a0d7fb8b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8efe81b197022b66b41715c5b46b721dd988ad8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_232eb204fa8da76db12b2880b92c75440d60125f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.supets.commons\commonui\2.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a577ebf4e6001a65b9aa5be631ff79a615f6359e">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.supets.commons-commonui-2.2.0_35e2bd92ad429d28f65fda5f0483474122e025d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\javax.inject-1_eb3bd9d112fb11cf9ee28d6b2266e52a5a59d72d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.0_fac6ddda76fb01bccb5bfb0057e1312cc952f9f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_84f4c248e2bc7944ef584827fe9a861aacc9cce1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_5b4d9c2fe978cb6c57c04b2f68949471929934a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.0_af044230d5ef89f7f5c785ebd5d1cb3d38f805b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-multidex-1.0.1_e795b7f3babbedb8f3e8b3282bc86a1aa6b99a21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.0.1_32c5105c318cfb8293387d8fa3c91237314e1c8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\supets-react\libreacthotfix\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e3348681da4d2aeca10d4d8127eea124db976a6d">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\supets-react-libreacthotfix-unspecified_5f5143c6d9c1d0f65336e743d757d2a0d7fb8b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_c0f294f1cfdbe9a7d2a40b29d80184b97b8507f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\supets-react\web\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d017d851d1d4d883393b251af6d3f483ca54ba06">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\supets-react-web-unspecified_b06e87ac8403c078991ef54e267f479877990256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_12aab91f27a528442ae9c7fea215961d569fc5d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_5b4d9c2fe978cb6c57c04b2f68949471929934a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_f20786d4fbfc5b03eceeb1b4dee5825c381086b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.0_67678eb06a95ad4ff48bff68c2fdd7ba0e15b689.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
         <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_2ea36876004d7bf5580e85de369f4263772cf0c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.supets.lib\suppertlib\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="11b3cf3c39bb888f463098a973eb08089fd418ca">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.supets.lib-suppertlib-25.3.0_333940fa33940819fe3ee17d04f5138756643195.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.0_47f37cfc919094b41580cf300e0fde7e24a8737b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -201,30 +480,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_84f4c248e2bc7944ef584827fe9a861aacc9cce1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_f9a1a0d4838abbdb514eca42926eda0ef2f30ee8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_232eb204fa8da76db12b2880b92c75440d60125f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.0_9db26b0822a21b0d1c3303880fa8b1fba9bccb65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_28220695cff43dad5b2c65f24d7e062e0d25ff1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.0_07faa8ec7eccdabe6731f9420553a2581b5a2a66.jar" />
     </item>
 
 </items>

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" filepath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" />
       <module fileurl="file://$PROJECT_DIR$/supets-react.iml" filepath="$PROJECT_DIR$/supets-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

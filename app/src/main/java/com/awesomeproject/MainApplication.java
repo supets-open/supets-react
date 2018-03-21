@@ -14,7 +14,7 @@ public class MainApplication extends Application implements ReactApplication {
     public void onCreate() {
         super.onCreate();
         SoLoader.init(this, /* native exopackage */ false);
-        ReactDevelopTools.setDebugHost(this, "192.168.0.183", "8081", true);
+        ReactDevelopTools.setDebugHost(this, "192.168.0.185", "8081", true);
     }
 
     @Override
