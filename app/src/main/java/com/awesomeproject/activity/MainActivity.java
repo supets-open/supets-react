@@ -40,6 +40,7 @@ public class MainActivity extends Activity implements JsBundleCallback {
         adapter.getData().add(new ReactData("pageFlexLayout"));
         adapter.getData().add(new ReactData("pageStyleSheet"));
         adapter.getData().add(new ReactData("pageViewPager"));
+        adapter.getData().add(new ReactData("InterView"));
 
         reactListView.setAdapter(adapter);
         reactListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
