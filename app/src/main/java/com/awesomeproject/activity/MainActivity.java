@@ -3,8 +3,11 @@ package com.awesomeproject.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -14,6 +17,7 @@ import com.supets.pet.libreacthotfix.api.JsBundleCallback;
 import com.supets.pet.libreacthotfix.api.UpDateBundleApi;
 import com.supets.pet.libreacthotfix.bean.AppVersion;
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
+import com.supets.pet.libreacthotfix.utils.ReactDevelopTools;
 import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
 
 public class MainActivity extends Activity implements JsBundleCallback {
@@ -27,11 +31,33 @@ public class MainActivity extends Activity implements JsBundleCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.react_test_main);
 
-        //热修复
-        UpDateBundleApi.patch();
-        ReactPreLoader.clear();
 
+        EditText ips = (EditText) findViewById(R.id.ip);
+        ips.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                ReactDevelopTools.setDebugHost(MainActivity.this, s.toString(), "8081", true);
+            }
+        });
+
+
+        //热修复
+        ReactPreLoader.clear();
+        UpDateBundleApi.patch();
         //预加载
+        ReactPreLoader.clear();
+        ReactPreLoader.init(this, "pageCache", null);
+
 
         reactListView = (ListView) findViewById(R.id.reactListView);
         adapter = new ReactAdapter();

@@ -11,7 +11,8 @@ public class ReactTestActivity extends SupetReactActivity {
 
     @Override
     protected String getMainComponentName() {
-        return getIntent().getStringExtra("moduleName");
+        String moduleName=getIntent().getStringExtra("moduleName");
+        return moduleName==null?"InterView":moduleName;
     }
 
     @Override
