@@ -20,7 +20,7 @@ import android.webkit.WebView;
 import com.supets.cloudpet.module.web.core.ResponseCallBack;
 import com.supets.cloudpet.module.web.core.UriCallBack;
 
-public abstract class BaseWebViewFragment extends Fragment implements ResponseCallBack, UriCallBack{
+public abstract class BaseWebViewFragment extends Fragment implements ResponseCallBack, UriCallBack {
 
     protected String getStringArgument(String key) {
         Bundle arguments = getArguments();
@@ -49,7 +49,7 @@ public abstract class BaseWebViewFragment extends Fragment implements ResponseCa
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-         mWebView = new WebView(getActivity());
+        mWebView = new WebView(getActivity());
         initWebView();
 
         String mUrl = getStringArgument("url");
@@ -86,7 +86,10 @@ public abstract class BaseWebViewFragment extends Fragment implements ResponseCa
         mWebView.setDownloadListener(new DownloadListener() {
 
             @Override
-            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype,
+            public void onDownloadStart(String url,
+                                        String userAgent,
+                                        String contentDisposition,
+                                        String mimetype,
                                         long contentLength) {
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
