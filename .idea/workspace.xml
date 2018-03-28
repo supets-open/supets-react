@@ -15,14 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" afterPath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3995,70 +3990,6 @@
             </path>
             <path>
               <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="apk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supets-react" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="awesomeproject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supets-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -4074,7 +4005,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="android.sdk.path" value="C:/studio/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="c4072fc08641" />
+    <property name="device.picker.selection" value="192.168.125.101:5555" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/libreacthotfix/src/main/java/com" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -4086,7 +4017,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SearchEverywhereHistoryKey" value="Looper&#9;PSI&#9;JAVA://android.os.Looper&#10;Reacta&#9;FILE&#9;file://C:/Users/thinkpad/Documents/GitHub/supets-react/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java&#10;Reactac&#9;FILE&#9;file://C:/Users/thinkpad/Documents/GitHub/supets-react/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivity.java&#10;ReactFr&#9;FILE&#9;jar://C:/reactnative/AwesomeProject/node_modules/react-native/android/com/facebook/react/react-native/0.43.3/react-native-0.43.3-sources.jar!/com/facebook/react/ReactFragmentActivity.java&#10;ReactAC&#9;FILE&#9;jar://C:/reactnative/AwesomeProject/node_modules/react-native/android/com/facebook/react/react-native/0.43.3/react-native-0.43.3-sources.jar!/com/facebook/react/ReactActivity.java" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522228371075" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522231269875" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -4793,7 +4724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522062267825</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="热更新接口实现">
+      <created>1522228404895</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1522228404895</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -5210,18 +5148,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/index.android.bundle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="393" column="241" lean-forward="false" selection-start-line="393" selection-start-column="241" selection-end-line="393" selection-end-column="241" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/index.android.bundle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="393" column="241" lean-forward="false" selection-start-line="393" selection-start-column="241" selection-end-line="393" selection-end-column="241" />
           <folding />
         </state>
       </provider>
