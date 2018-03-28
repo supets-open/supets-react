@@ -112,28 +112,28 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="com.supets.lib:contextlib-2.0.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-v4-23.4.0" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:imagepipeline-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.squareup.okhttp3:okhttp:3.4.1@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.squareup.okhttp3:okhttp-ws:3.4.1@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:fbcore-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:drawee-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:imagepipeline-base-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-23.0.1" level="project" />
-    <orderEntry type="library" exported="" name="javax.inject:javax.inject:1@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-annotations:23.4.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.code.findbugs:jsr305:3.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.react:react-native-0.43.3" level="project" />
-    <orderEntry type="library" exported="" name="com.squareup.okhttp3:okhttp-urlconnection:3.4.1@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.soloader:soloader-0.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:fresco-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fbui.textlayoutbuilder:textlayoutbuilder-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="org.webkit:android-jsc-r174650" level="project" />
-    <orderEntry type="library" exported="" name="com.squareup.okio:okio:1.9.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.facebook.fresco:imagepipeline-okhttp3-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:recyclerview-v7-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:drawee-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:fbcore-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:imagepipeline-base-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.soloader:soloader-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fbui.textlayoutbuilder:textlayoutbuilder-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.squareup.okhttp3:okhttp-ws:3.4.1@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:appcompat-v7-23.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fbui.textlayoutbuilder:staticlayout-proxy:1.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.supets.lib:contextlib-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:imagepipeline-okhttp3-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.react:react-native-0.43.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:fresco-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.squareup.okhttp3:okhttp-urlconnection:3.4.1@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-v4-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-annotations:23.4.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.squareup.okhttp3:okhttp:3.4.1@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:recyclerview-v7-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.google.code.findbugs:jsr305:3.0.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.webkit:android-jsc-r174650" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.squareup.okio:okio:1.9.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.facebook.fresco:imagepipeline-1.0.1" level="project" />
   </component>
 </module>
