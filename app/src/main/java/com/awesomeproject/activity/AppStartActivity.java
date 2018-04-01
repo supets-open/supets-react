@@ -71,7 +71,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
     private void update() {
         try {
             OkHttpUtils.get().url(
-                    "https://raw.githubusercontent.com/rabbit-open/rabbit/master/database/version_update.json")
+                    "https://raw.githubusercontent.com/supets-open/supets-react/master/database/version_update.json")
                     .build()
                     .execute(new StringCallback() {
                         @Override
