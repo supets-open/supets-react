@@ -228,21 +228,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_12aab91f27a528442ae9c7fea215961d569fc5d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
         <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.0_ed7bcd10af5a7be1cfb4674d0191d7c3da21ddef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\thinkpad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\thinkpad\Documents\GitHub\supets-react\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_12aab91f27a528442ae9c7fea215961d569fc5d8.jar" />
     </item>
     <item
         is-multidex="false"

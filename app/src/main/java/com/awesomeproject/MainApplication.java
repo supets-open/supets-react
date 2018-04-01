@@ -5,6 +5,7 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.soloader.SoLoader;
+import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
 import com.supets.pet.libreacthotfix.react.AppReactInstanceManager;
 import com.supets.pet.libreacthotfix.utils.ReactDevelopTools;
 
