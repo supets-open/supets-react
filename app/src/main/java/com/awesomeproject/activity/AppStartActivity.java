@@ -43,6 +43,8 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
         Intent intent = new Intent(this, ReactTestActivity.class);
         startActivity(intent);
+
+        finish();
     }
 
     @Override

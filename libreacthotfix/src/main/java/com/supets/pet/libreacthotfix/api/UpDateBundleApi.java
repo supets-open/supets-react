@@ -39,6 +39,9 @@ public class UpDateBundleApi {
 
                 try {
                     HttpURLConnection conn = (HttpURLConnection) new URL(params[0]).openConnection();
+                    //果然2.2版本以上HttpURLConnection跟服务交互采用了"gzip"压缩
+                    //getContentLength()为-1 解决方法
+                    conn.setRequestProperty("Accept-Encoding", "identity");
                     conn.setConnectTimeout(10000);
                     conn.connect();
 
