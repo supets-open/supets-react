@@ -34,5 +34,9 @@ dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile project(path: ':libreacthotfix')
     compile project(path: ':web')
+
+    compile 'com.supets.lib:jsoneditlib:1.4.0'
+
+    compile 'com.zhy:okhttputils:2.6.2'
 }
 

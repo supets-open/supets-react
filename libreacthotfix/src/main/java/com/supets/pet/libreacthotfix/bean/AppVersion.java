@@ -24,7 +24,9 @@ public class AppVersion {
     }
 
     public boolean isUpdate() {
-        return !VersionSharePreferceUtils.getBundleVersion().equals(lastBundleVersion);
+        int last = Integer.parseInt(lastBundleVersion.replace(".", ""));
+        int old = Integer.parseInt(VersionSharePreferceUtils.getBundleVersion().replace(".", ""));
+        return last > old;
     }
 
 }

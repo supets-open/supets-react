@@ -1,10 +1,11 @@
 package com.awesomeproject.activity;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
 import com.awesomeproject.R;
@@ -14,6 +15,10 @@ import com.supets.pet.libreacthotfix.api.UpDateBundleApi;
 import com.supets.pet.libreacthotfix.bean.AppVersion;
 import com.supets.pet.libreacthotfix.preloader.ReactPreLoader;
 import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import okhttp3.Call;
 
 public class AppStartActivity extends Activity implements JsBundleCallback {
 
@@ -22,16 +27,8 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.appstart);
 
+        update();
 
-        AppVersion appVersion = new AppVersion();
-        appVersion.setDownloadUrl("https://raw.githubusercontent.com/supets-open/supets-java/master/patch110");
-        appVersion.setLastBundleVersion("1.1.0");
-
-        if (appVersion.isUpdate()) {
-            UpDateBundleApi.downloadAsync(appVersion, this);
-        } else {
-            onNoUpdate();
-        }
     }
 
     private void startUi() {
@@ -69,6 +66,64 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
         VersionSharePreferceUtils.setBundleVersion("1.1.0");
 
         startUi();
+    }
+
+    private void update() {
+        try {
+            OkHttpUtils.get().url(
+                    "https://raw.githubusercontent.com/rabbit-open/rabbit/master/database/version_update.json")
+                    .build()
+                    .execute(new StringCallback() {
+                        @Override
+                        public void onError(Call call, Exception e, int id) {
+                            onNoUpdate();
+                        }
+
+                        @Override
+                        public void onResponse(String response, int id) {
+                            VersionDTO dto = JSonUtil.fromJson(response, VersionDTO.class);
+                            int last = Integer.parseInt(dto.content.version.replace(".", ""));
+                            int old = Integer.parseInt(VersionSharePreferceUtils.getBundleVersion().replace(".", ""));
+                            if (last > old) {
+                                updateData(dto);
+                            } else {
+                                onNoUpdate();
+                            }
+                        }
+                    });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public void updateData(final VersionDTO dto) {
+        new AlertDialog.Builder(this)
+                .setTitle("版本更新")
+                .setMessage(dto.content.text)
+                .setPositiveButton("下载", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        AppVersion appVersion = new AppVersion();
+                        appVersion.setDownloadUrl(dto.content.url);
+                        appVersion.setLastBundleVersion(dto.content.version);
+
+                        if (appVersion.isUpdate()) {
+                            UpDateBundleApi.downloadAsync(appVersion, AppStartActivity.this);
+                        } else {
+                            onNoUpdate();
+                        }
+                    }
+                })
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        onNoUpdate();
+                    }
+                })
+                .show();
+
     }
 
 
