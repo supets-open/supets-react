@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.awesomeproject.R;
@@ -22,13 +23,15 @@ import okhttp3.Call;
 
 public class AppStartActivity extends Activity implements JsBundleCallback {
 
+    private VersionDTO mVersion;
+    private ProgressBar progressBar;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.appstart);
-
+        progressBar = (ProgressBar) findViewById(R.id.processBar);
         update();
-
     }
 
     private void startUi() {
@@ -44,27 +47,24 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
     @Override
     public void onDownloading(int progress) {
-
+        progressBar.setProgress(progress);
     }
 
     @Override
     public void onError(Exception e) {
-        Toast.makeText(App.INSTANCE, "Exception", Toast.LENGTH_SHORT).show();
+        Toast.makeText(App.INSTANCE, "更新失敗", Toast.LENGTH_SHORT).show();
         startUi();
     }
 
     @Override
     public void onNoUpdate() {
         startUi();
-        Toast.makeText(App.INSTANCE, "onNoUpdate", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onUpdateSuccess() {
-        Toast.makeText(App.INSTANCE, "success", Toast.LENGTH_SHORT).show();
-
-        VersionSharePreferceUtils.setBundleVersion("1.1.0");
-
+        Toast.makeText(App.INSTANCE, "更新成功", Toast.LENGTH_SHORT).show();
+        VersionSharePreferceUtils.setBundleVersion(mVersion.content.version);
         startUi();
     }
 
@@ -74,6 +74,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
                     "https://raw.githubusercontent.com/supets-open/supets-react/master/database/version_update.json")
                     .build()
                     .execute(new StringCallback() {
+
                         @Override
                         public void onError(Call call, Exception e, int id) {
                             onNoUpdate();
@@ -81,11 +82,11 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
                         @Override
                         public void onResponse(String response, int id) {
-                            VersionDTO dto = JSonUtil.fromJson(response, VersionDTO.class);
-                            int last = Integer.parseInt(dto.content.version.replace(".", ""));
+                            mVersion = JSonUtil.fromJson(response, VersionDTO.class);
+                            int last = Integer.parseInt(mVersion.content.version.replace(".", ""));
                             int old = Integer.parseInt(VersionSharePreferceUtils.getBundleVersion().replace(".", ""));
                             if (last > old) {
-                                updateData(dto);
+                                updateData(mVersion);
                             } else {
                                 onNoUpdate();
                             }
