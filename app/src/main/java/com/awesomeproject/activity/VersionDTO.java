@@ -10,6 +10,7 @@ public class VersionDTO {
         public String url;
         public String text;
         public String version;
+        public boolean reload;
     }
 
 }

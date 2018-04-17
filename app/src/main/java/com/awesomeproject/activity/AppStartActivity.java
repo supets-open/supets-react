@@ -3,6 +3,7 @@ package com.awesomeproject.activity;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -108,6 +109,12 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
                 .setPositiveButton("下载", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
+                        if (dto.content.reload){
+                            goWebView(dto.content.url);
+                            return;
+                        }
+
                         AppVersion appVersion = new AppVersion();
                         appVersion.setDownloadUrl(dto.content.url);
                         appVersion.setLastBundleVersion(dto.content.version);
@@ -117,6 +124,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
                         } else {
                             onNoUpdate();
                         }
+
                     }
                 })
                 .setNegativeButton("取消", new DialogInterface.OnClickListener() {
@@ -129,5 +137,11 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
     }
 
+    private  void goWebView(String content_url){
+        Intent intent= new Intent();
+        intent.setAction("android.intent.action.VIEW");
+        intent.setData(Uri.parse(content_url));
+        startActivity(intent);
+    }
 
 }
