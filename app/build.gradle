@@ -4,12 +4,15 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
 
+    def currentVersionCode = getVersionCode()
+    def currentVersionName = getVersionName()
+
     defaultConfig {
         applicationId "com.supet.react"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode currentVersionCode
+        versionName currentVersionName
 
 //        ndk {
 //            abiFilters 'armeabi', 'x86'
@@ -27,6 +30,21 @@ android {
         release {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
+
+        // delete unaligned files
+        android.applicationVariants.all { variant ->
+            variant.assemble.doLast {
+                variant.outputs.each { output ->
+                    File file = output.packageApplication.outputFile;
+                    if (variant.buildType.zipAlignEnabled && file.getName().contains("unaligned")) {
+                        println "deleting " + file.getName()
+                        file.delete()
+                    }
+                }
+
+                updateVersionCode()
+            }
+        }
     }
 
     productFlavors {
@@ -34,6 +52,60 @@ android {
     }
 
 }
+
+
+
+def getVersionCode() {
+    def versionFile = file('version.properties')
+
+    if (versionFile.exists()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionCode = versionProps['build.number'].toInteger()
+        println('Current version code is ' + versionCode.toString())
+        return versionCode
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+
+def getVersionName() {
+    def versionFile = file('version.properties')
+
+    if (versionFile.exists()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionCode = versionProps['build.versionName'].toString()
+        println('Current version code is ' + versionCode.toString())
+        return versionCode
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+
+def updateVersionCode() {
+
+    def runTasks = gradle.startParameter.taskNames
+
+    if (!('assemble' in runTasks || 'assembleRelease' in runTasks || 'aR' in runTasks)) {
+        return
+    }
+
+    def File versionFile = file('version.properties')
+
+    if (versionFile.exists()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def currentVersionCode = versionProps['build.number'].toInteger()
+        currentVersionCode++
+        versionProps['build.number'] = currentVersionCode.toString()
+        versionProps.store(versionFile.newWriter(), null)
+        println('Updated version code to ' + currentVersionCode.toString())
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+
 
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
