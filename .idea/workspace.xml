@@ -83,20 +83,7 @@
     <favorites_list name="android" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ReactData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -4544,7 +4531,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/thinkpad/Documents/GitHub/supets-react/app/src/main/java/com/awesomeproject/activity/AppStartActivity.java&#10;Looper&#9;PSI&#9;JAVA://android.os.Looper&#10;Reacta&#9;FILE&#9;file://C:/Users/thinkpad/Documents/GitHub/supets-react/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java&#10;Reactac&#9;FILE&#9;file://C:/Users/thinkpad/Documents/GitHub/supets-react/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivity.java&#10;ReactFr&#9;FILE&#9;jar://C:/reactnative/AwesomeProject/node_modules/react-native/android/com/facebook/react/react-native/0.43.3/react-native-0.43.3-sources.jar!/com/facebook/react/ReactFragmentActivity.java&#10;ReactAC&#9;FILE&#9;jar://C:/reactnative/AwesomeProject/node_modules/react-native/android/com/facebook/react/react-native/0.43.3/react-native-0.43.3-sources.jar!/com/facebook/react/ReactActivity.java" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1523958899712" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1523958931079" />
     <property name="android.profiler.active" value="true" />
     <property name="ExportApk.ApkPath" value="C:\Users\thinkpad\Documents\GitHub\supets-react\app" />
     <property name="ExportApk.Flavors" value="localhost" />
@@ -5435,7 +5422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523935539125</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="实现接口更新">
+      <created>1523958937247</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1523958937247</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
