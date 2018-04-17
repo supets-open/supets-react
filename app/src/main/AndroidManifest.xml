@@ -35,7 +35,7 @@
 
         <activity android:name=".activity.ReactTestActivity"/>
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <activity android:name=".activity.LocalActivity" />
+        <!--<activity android:name=".activity.LocalActivity" />-->
     </application>
 
 </manifest>
