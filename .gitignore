@@ -1,5 +1,10 @@
-/build
-.idea
+*.iml
 .gradle
-supets-react.iml
-local.properties
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+build/
+
