@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" filepath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/supets-react.iml" filepath="$PROJECT_DIR$/supets-react.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="supets-react/app" />
+      <module fileurl="file://$PROJECT_DIR$/commonui/commonui.iml" filepath="$PROJECT_DIR$/commonui/commonui.iml" group="supets-react/commonui" />
+      <module fileurl="file://$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" filepath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" group="supets-react/libreacthotfix" />
+      <module fileurl="file://$PROJECT_DIR$/supets-react.iml" filepath="$PROJECT_DIR$/supets-react.iml" group="supets-react" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" group="supets-react/web" />
     </modules>
   </component>
 </project>

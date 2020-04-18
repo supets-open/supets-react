@@ -1,8 +1,7 @@
 apply plugin: "com.android.application"
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 23
 
     def currentVersionCode = getVersionCode()
     def currentVersionName = getVersionName()
@@ -13,15 +12,9 @@ android {
         targetSdkVersion 22
         versionCode currentVersionCode
         versionName currentVersionName
-
-//        ndk {
-//            abiFilters 'armeabi', 'x86'
-//        }
     }
 
     sourceSets {
-
-        instrumentTest.setRoot('tests')
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
@@ -30,29 +23,13 @@ android {
         release {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
-
-        // delete unaligned files
-        android.applicationVariants.all { variant ->
-            variant.assemble.doLast {
-                variant.outputs.each { output ->
-                    File file = output.packageApplication.outputFile;
-                    if (variant.buildType.zipAlignEnabled && file.getName().contains("unaligned")) {
-                        println "deleting " + file.getName()
-                        file.delete()
-                    }
-                }
-
-                updateVersionCode()
-            }
-        }
     }
-
+    flavorDimensions "env"
     productFlavors {
         localhost {}
     }
 
 }
-
 
 
 def getVersionCode() {
@@ -65,7 +42,7 @@ def getVersionCode() {
         println('Current version code is ' + versionCode.toString())
         return versionCode
     } else {
-        throw new GradleException("Could not find version.properties!")
+        //throw new GradleException("Could not find version.properties!")
     }
 }
 
@@ -79,41 +56,19 @@ def getVersionName() {
         println('Current version code is ' + versionCode.toString())
         return versionCode
     } else {
-        throw new GradleException("Could not find version.properties!")
+        //throw new GradleException("Could not find version.properties!")
     }
 }
-
-def updateVersionCode() {
-
-    def runTasks = gradle.startParameter.taskNames
-
-    if (!('assemble' in runTasks || 'assembleRelease' in runTasks || 'aR' in runTasks)) {
-        return
-    }
-
-    def File versionFile = file('version.properties')
-
-    if (versionFile.exists()) {
-        def Properties versionProps = new Properties()
-        versionProps.load(new FileInputStream(versionFile))
-        def currentVersionCode = versionProps['build.number'].toInteger()
-        currentVersionCode++
-        versionProps['build.number'] = currentVersionCode.toString()
-        versionProps.store(versionFile.newWriter(), null)
-        println('Updated version code to ' + currentVersionCode.toString())
-    } else {
-        throw new GradleException("Could not find version.properties!")
-    }
-}
-
 
 dependencies {
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    compile project(path: ':libreacthotfix')
-    compile project(path: ':web')
+    fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:23.4.0"
+    implementation "com.facebook.react:react-native:0.43.3"
+    implementation project(path: ':libreacthotfix')
+    implementation project(path: ':web')
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.supets.lib:contextlib:2.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
-    compile 'com.supets.lib:jsoneditlib:1.4.0'
-
-    compile 'com.zhy:okhttputils:2.6.2'
 }
 
