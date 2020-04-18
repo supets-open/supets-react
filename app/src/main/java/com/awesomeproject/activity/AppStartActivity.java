@@ -5,13 +5,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+
 import com.awesomeproject.R;
-import com.supets.lib.supetscontext.App;
 import com.supets.pet.libreacthotfix.api.JsBundleCallback;
 import com.supets.pet.libreacthotfix.api.UpDateBundleApi;
 import com.supets.pet.libreacthotfix.bean.AppVersion;
@@ -55,7 +55,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
     @Override
     public void onError(Exception e) {
-        Toast.makeText(App.INSTANCE, "更新失敗", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "更新失敗", Toast.LENGTH_SHORT).show();
         startUi();
     }
 
@@ -66,7 +66,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
     @Override
     public void onUpdateSuccess() {
-        Toast.makeText(App.INSTANCE, "更新成功", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "更新成功", Toast.LENGTH_SHORT).show();
         VersionSharePreferceUtils.setBundleVersion(mVersion.content.version);
         startUi();
     }
@@ -110,7 +110,7 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        if (dto.content.reload){
+                        if (dto.content.reload) {
                             goWebView(dto.content.url);
                             return;
                         }
@@ -137,8 +137,8 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
 
     }
 
-    private  void goWebView(String content_url){
-        Intent intent= new Intent();
+    private void goWebView(String content_url) {
+        Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
         intent.setData(Uri.parse(content_url));
         startActivity(intent);

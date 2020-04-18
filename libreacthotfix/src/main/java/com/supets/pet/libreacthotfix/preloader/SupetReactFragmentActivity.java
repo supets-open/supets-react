@@ -10,8 +10,9 @@ package com.supets.pet.libreacthotfix.preloader;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;

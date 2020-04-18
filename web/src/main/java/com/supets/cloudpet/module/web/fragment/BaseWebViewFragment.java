@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +14,9 @@ import android.webkit.ValueCallback;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.supets.cloudpet.module.web.core.ResponseCallBack;
 import com.supets.cloudpet.module.web.core.UriCallBack;
@@ -72,7 +73,7 @@ public abstract class BaseWebViewFragment extends Fragment implements ResponseCa
         mWebView.getSettings().setDefaultTextEncodingName("UTF-8");
         mWebView.getSettings().setDomStorageEnabled(true); // 解决微信页面点击‘阅读原文’无反应的bug
 
-          /* 解决空白页问题 */
+        /* 解决空白页问题 */
         mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
 
         if (Build.VERSION.SDK_INT > 11) {

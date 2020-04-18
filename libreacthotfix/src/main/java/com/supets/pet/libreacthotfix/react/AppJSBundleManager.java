@@ -1,6 +1,6 @@
 package com.supets.pet.libreacthotfix.react;
 
-import com.supets.lib.supetscontext.App;
+import com.supets.pet.libreacthotfix.App;
 import com.supets.pet.libreacthotfix.utils.FileUtil;
 import com.supets.pet.libreacthotfix.utils.VersionSharePreferceUtils;
 

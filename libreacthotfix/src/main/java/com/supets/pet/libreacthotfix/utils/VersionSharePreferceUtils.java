@@ -2,7 +2,8 @@ package com.supets.pet.libreacthotfix.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import com.supets.lib.supetscontext.App;
+
+import com.supets.pet.libreacthotfix.App;
 
 /**
  * Created by b.s.lee on 2016/2/25.
@@ -22,7 +23,7 @@ public class VersionSharePreferceUtils {
     }
 
     public static void setBundleVersion(String latestVersion) {
-        SharedPreferences sharedPreferences =  App.INSTANCE.getSharedPreferences(VersionName, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = App.INSTANCE.getSharedPreferences(VersionName, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(BUNDLE_VERSION, latestVersion);
         editor.apply();

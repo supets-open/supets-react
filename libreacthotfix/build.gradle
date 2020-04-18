@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -19,6 +19,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.facebook.react:react-native:0.43.3"  // From node_modules
-    implementation 'com.supets.lib:contextlib:2.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "com.facebook.react:react-native:0.62.2"  // From node_modules
 }

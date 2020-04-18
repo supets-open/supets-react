@@ -3,8 +3,9 @@ package com.supets.pet.libreacthotfix.preloader;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.util.ArrayMap;
 import android.view.ViewGroup;
+
+import androidx.collection.ArrayMap;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactRootView;

@@ -1,7 +1,7 @@
 apply plugin: "com.android.application"
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 28
 
     def currentVersionCode = getVersionCode()
     def currentVersionName = getVersionName()
@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.supet.react"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 28
         versionCode currentVersionCode
         versionName currentVersionName
     }
@@ -62,12 +62,11 @@ def getVersionName() {
 
 dependencies {
     fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.android.support:appcompat-v7:23.4.0"
-    implementation "com.facebook.react:react-native:0.43.3"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "com.facebook.react:react-native:0.62.2"
     implementation project(path: ':libreacthotfix')
     implementation project(path: ':web')
     implementation 'com.zhy:okhttputils:2.6.2'
-    implementation 'com.supets.lib:contextlib:2.0.0'
     implementation 'com.google.code.gson:gson:2.8.5'
 
 }

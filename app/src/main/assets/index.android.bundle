@@ -1268,6 +1268,22 @@ _reactNative.AppRegistry.registerComponent('main', function () {
     return pageModule.getMain();
 }, null);
 
+_reactNative.AppRegistry.registerComponent('pageImage', function () {
+    return pageModule.getPageImage();
+}, null);
+_reactNative.AppRegistry.registerComponent('pageText', function () {
+    return pageModule.getPageText();
+}, null);
+_reactNative.AppRegistry.registerComponent('pageFlexLayout', function () {
+    return pageModule.getPageFlexLayout();
+}, null);
+_reactNative.AppRegistry.registerComponent('pageStyleSheet', function () {
+    return pageModule.getPageStyleSheet();
+}, null);
+_reactNative.AppRegistry.registerComponent('pageViewPager', function () {
+    return pageModule.getPageViewPager();
+}, null);
+
 _reactNative.AppRegistry.registerComponent('InterView', function () {
     return pageModule.getInterView();
 }, null);
@@ -50141,13 +50157,7 @@ var familyAddress = function (_Component) {
     }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
-            var _this3 = this;
-
-            _MyIntentModule2.default.getDataFromIntent(function (successdata) {
-                _this3.state.mode = 1;
-                _this3.state.text = JSON.stringify(successdata);
-                _this3.setState(_this3.state);
-            }, function (errordata) {});
+            _MyIntentModule2.default.getDataFromIntent(function (successdata) {}, function (errordata) {});
         }
     }]);
     return familyAddress;

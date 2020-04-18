@@ -3,12 +3,13 @@ package com.supets.cloudpet.module.web.activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.supets.cloudpet.module.web.R;
 import com.supets.cloudpet.module.web.fragment.WebViewActionListener;
@@ -45,7 +46,7 @@ public class MYWebViewActivity extends FragmentActivity implements WebViewAction
 
         String url = uri != null ? uri.getQueryParameter("url") : intent.getStringExtra("url");
 
-       //url = "http://m.supets.com/demo";
+        //url = "http://m.supets.com/demo";
 
         if (TextUtils.isEmpty(url)) {
             finish();

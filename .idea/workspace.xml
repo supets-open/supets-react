@@ -12,11 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="修复不能用">
-      <change afterPath="$PROJECT_DIR$/node-v12.10.0-win-x64.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/AppStartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/AppStartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/LocalActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/LocalActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commonui/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/AppReactPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/AppReactPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/MyIntentModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/MyIntentModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/CacheDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/CacheDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/ReactPreLoaderMulti.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/ReactPreLoaderMulti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactFragmentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactFragmentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/react/AppJSBundleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/react/AppJSBundleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/utils/VersionSharePreferceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/utils/VersionSharePreferceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/activity/MYWebViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/activity/MYWebViewActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/fragment/BaseWebViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/fragment/BaseWebViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587193843951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修复不能用">
+      <created>1587213326002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587213326002</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

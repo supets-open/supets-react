@@ -2,7 +2,8 @@ package com.supets.pet.libreacthotfix.preloader;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 import javax.annotation.Nullable;
 
@@ -17,16 +18,16 @@ import javax.annotation.Nullable;
 
 public class CacheDelegate extends SupetReactActivityDelegate {
 
-    private Bundle  bundle;
+    private Bundle bundle;
 
     public CacheDelegate(Activity activity, @Nullable String mainComponentName) {
         super(activity, mainComponentName);
-        bundle=activity.getIntent().getExtras();
+        bundle = activity.getIntent().getExtras();
     }
 
     public CacheDelegate(FragmentActivity fragmentActivity, @Nullable String mainComponentName) {
         super(fragmentActivity, mainComponentName);
-        bundle=fragmentActivity.getIntent().getExtras();
+        bundle = fragmentActivity.getIntent().getExtras();
     }
 
     @Nullable
