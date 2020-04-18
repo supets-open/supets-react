@@ -6,62 +6,17 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/commonui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/CommonHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/DeleteLineTextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/EventBus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/FlowLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/GridCellView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/MiaEditText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/MiaTextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/java/com/supets/commons/widget/PageLoadingView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable-xhdpi/mia_commons_btn_title_bar_back_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable-xhdpi/mia_commons_btn_title_bar_back_normal_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable-xhdpi/mia_commons_btn_title_bar_back_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable-xhdpi/mia_commons_btn_title_bar_back_pressed_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable-xhdpi/mia_commons_icon_page_view_network_error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_btn_reloaded_normal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_btn_reloaded_pressed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_btn_reloaded_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_btn_title_bar_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_btn_title_bar_back_white_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_color_reloaded_text_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_color_title_text.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/drawable/mia_commons_color_title_text_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/layout/mia_commons_page_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/layout/mia_commons_page_view_empty.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/layout/mia_commons_page_view_loading.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/layout/mia_commons_page_view_network_error.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/layout/mia_commons_title_bar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/values/attrs_common_header.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/values/attrs_flow_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonui/src/main/res/values/widget_style.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="修复不能用">
+      <change afterPath="$PROJECT_DIR$/node-v12.10.0-win-x64.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app-localhost-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supets-react.iml" beforeDir="false" afterPath="$PROJECT_DIR$/supets-react.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/androidTest/java/com/supets/cloudpet/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/test/java/com/supets/cloudpet/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,10 +43,16 @@
   <component name="ProjectId" id="1ZFJLsFGBoMhRfp8RqAOgd9Dj5C" />
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="C:/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../supets-camera/SupetsCamera" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.2.0" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react\app\src\main\assets" />
+      <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,6 +240,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524722440956</updated>
     </task>
+    <task id="LOCAL-00001" summary="修复不能用">
+      <created>1587193843951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587193843951</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,5 +262,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修复不能用" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复不能用" />
   </component>
 </project>
