@@ -1,5 +1,30 @@
 apply plugin: "com.android.application"
 
+
+def enableHermes = true
+
+dependencies {
+    fileTree(dir: "libs", include: ["*.jar"])
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'androidx.recyclerview:recyclerview:1.1.0'
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    api 'com.google.android.material:material:1.1.0'
+
+    api project(path: ':libreacthotfix')
+    api project(path: ':web')
+    api 'com.zhy:okhttputils:2.6.2'
+    api 'com.google.code.gson:gson:2.8.5'
+    api "com.facebook.react:react-native:0.62.2" // From node_modules
+
+    if (enableHermes) {
+        def hermesPath = "C:/reactnative/AwesomeProject/node_modules/hermes-engine/android/";
+        debugImplementation files(hermesPath + "hermes-debug.aar")
+        releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+        implementation "org.webkit:android-jsc:+"
+    }
+}
+
 android {
     compileSdkVersion 28
 
@@ -59,15 +84,3 @@ def getVersionName() {
         //throw new GradleException("Could not find version.properties!")
     }
 }
-
-dependencies {
-    fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation "com.facebook.react:react-native:0.62.2"
-    implementation project(path: ':libreacthotfix')
-    implementation project(path: ':web')
-    implementation 'com.zhy:okhttputils:2.6.2'
-    implementation 'com.google.code.gson:gson:2.8.5'
-
-}
-

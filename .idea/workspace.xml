@@ -6,40 +6,21 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="修复不能用">
-      <change afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/App.java" afterDir="false" />
+    <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="升级最新RN版本和更新androidX">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/node_modules_reactnative_libraries_newappscreen_components_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/AppStartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/AppStartActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/LocalActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/LocalActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/activity/ReactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commonui/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/AppReactPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/AppReactPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/MyIntentModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/module/MyIntentModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/CacheDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/CacheDelegate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/ReactPreLoaderMulti.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/ReactPreLoaderMulti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactFragmentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactFragmentActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/react/AppJSBundleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/react/AppJSBundleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/utils/VersionSharePreferceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/utils/VersionSharePreferceUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/activity/MYWebViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/activity/MYWebViewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/fragment/BaseWebViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/supets/cloudpet/module/web/fragment/BaseWebViewFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appstart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appstart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,13 +47,17 @@
   <component name="ProjectId" id="1ZFJLsFGBoMhRfp8RqAOgd9Dj5C" />
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="C:/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.2.0" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react\app\src\main\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react\app\src\main\res" />
       <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react\app\src\main\assets" />
       <recent name="C:\Users\thinkpad\Documents\GitHub\supets-react" />
     </key>
@@ -277,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587213326002</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="升级最新RN版本和更新androidX">
+      <created>1587220171091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587220171091</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,6 +287,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修复不能用" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复不能用" />
+    <MESSAGE value="升级最新RN版本和更新androidX" />
+    <option name="LAST_COMMIT_MESSAGE" value="升级最新RN版本和更新androidX" />
   </component>
 </project>
