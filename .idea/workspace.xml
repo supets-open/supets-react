@@ -6,19 +6,25 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d2aee4-3af7-4737-a808-2c476fcc3bae" name="Default" comment="升级最新RN版本和更新androidX">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/drawable-mdpi/img_mia_commons_btn_title_bar_back_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/drawable-mdpi/img_mia_commons_icon_page_view_network_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/drawable-mdpi/img_right.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/drawable-mdpi/node_modules_reactnative_libraries_newappscreen_components_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/raw/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/index.android.bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/libreacthotfix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesomeproject/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/libreacthotfix/src/main/java/com/supets/pet/libreacthotfix/preloader/SupetReactActivityDelegate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -290,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587354987204</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="升级最新RN版本和更新androidX">
+      <created>1587371310166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587371310166</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -146,6 +146,7 @@
     <orderEntry type="library" name="Gradle: com.facebook.fbjni:fbjni-java-only:0.0.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.soloader:nativeloader:0.8.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C./Users/thinkpad/.gradle/caches/transforms-1/files-1.1/hermes-debug.aar/95443dcc0449c16024b1dbac8ffea805:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.react:react-native:0.62.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.1.0@aar" level="project" />
@@ -153,7 +154,6 @@
     <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.zhy:okhttputils:2.6.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.webkit:android-jsc:r245459@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat-resources:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
