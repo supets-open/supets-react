@@ -25,7 +25,8 @@ public class ReactPreLoaderMulti implements IPreLoader {
 
     public void setLaunchOptions(Object obj, Bundle launchOptions) {
         try {
-            Field field = ReactRootView.class.getDeclaredField("mLaunchOptions");
+            //Field field = ReactRootView.class.getDeclaredField("mLaunchOptions");//0.43
+            Field field = ReactRootView.class.getDeclaredField("mAppProperties");
             field.setAccessible(true);
             field.set(obj, launchOptions);
         } catch (Throwable e) {

@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 
 import com.facebook.react.ReactInstanceManager;
@@ -58,6 +59,7 @@ public abstract class SupetReactActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("lazy","lazy");
         lazy();
         mDelegate = createReactActivityDelegate();
         mDelegate.onCreate(savedInstanceState);

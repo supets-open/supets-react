@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -36,15 +37,11 @@ public class AppStartActivity extends Activity implements JsBundleCallback {
     }
 
     private void startUi() {
-
         ReactPreLoader.clear();
         UpDateBundleApi.patch();
-
-        ReactPreLoader.init(this, "pageCache", null);
-
+        ReactPreLoader.init(this, "testDemo", null);
         Intent intent = new Intent(this, ReactTestActivity.class);
         startActivity(intent);
-
         finish();
     }
 

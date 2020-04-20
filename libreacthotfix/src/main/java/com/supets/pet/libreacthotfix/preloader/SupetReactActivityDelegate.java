@@ -10,7 +10,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
@@ -93,6 +96,9 @@ public class SupetReactActivityDelegate {
                     getReactNativeHost().getReactInstanceManager(),
                     appKey,
                     getLaunchOptions());
+        }
+        if (rootView.getParent() != null) {
+            ((ViewGroup) rootView.getParent()).removeAllViews();
         }
         return rootView;
     }
