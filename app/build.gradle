@@ -1,7 +1,7 @@
 apply plugin: "com.android.application"
 
 
-def enableHermes = true
+def enableHermes = false
 
 dependencies {
     fileTree(dir: "libs", include: ["*.jar"])
